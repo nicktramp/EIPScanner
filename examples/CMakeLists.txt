@@ -21,6 +21,12 @@ target_link_libraries(discovery_example EIPScanner)
 add_executable(yaskawa_assembly_object_example vendors/yaskawa/mp3300iec/Yaskawa_AssemblyObjectExample.cpp)
 target_link_libraries(yaskawa_assembly_object_example EIPScanner)
 
+add_executable(brooks_implicit_msg_example vendors/brooks/sla5800/Brooks_ImplicitMsgExample.cpp)
+target_link_libraries(brooks_implicit_msg_example EIPScanner)
+
+add_executable(brooks_explicit_msg_example vendors/brooks/sla5800/Brooks_ExplicitMsgExample.cpp)
+target_link_libraries(brooks_explicit_msg_example EIPScanner)
+
 if(WIN32)
   target_link_libraries(explicit_messaging ws2_32)
   target_link_libraries(file_object_example ws2_32)
