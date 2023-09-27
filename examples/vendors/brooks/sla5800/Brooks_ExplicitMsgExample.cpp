@@ -1,7 +1,7 @@
 /* Explicit Messaging Example */
-#include <EIPScanner/MessageRouter.h>
-#include <EIPScanner/utils/Logger.h>
-#include <EIPScanner/utils/Buffer.h>
+#include "MessageRouter.h"
+#include "utils/Logger.h"
+#include "utils/Buffer.h"
 
 using eipScanner::SessionInfo;
 using eipScanner::MessageRouter;
